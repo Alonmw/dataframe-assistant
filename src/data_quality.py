@@ -1,14 +1,3 @@
-"""
-TODO:
-    check_low_variance():
-        *Needs to be adjusted to support other dtypes*
-    Identify invalid data:
-        Outliers for numerical features.
-        Invalid or inconsistent values for categorical features.
-    Provide a summary report:
-        Summarize all the quality checks for easy interpretation.
-"""
-
 import pandas as pd
 import numpy as np
 

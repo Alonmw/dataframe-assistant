@@ -1,19 +1,7 @@
 """
-TODO:
-    Create visualizations for numerical features:
-        Distribution plots.
-        Correlation with the target.
-    Visualize categorical features:
-        Bar charts for frequency distribution.
-    Analyze relationships between features:
-        Scatter plots for numerical features.
-        Heatmaps for correlation matrices.
-    Provide summary visualizations for the DataFrame:
-        Overall data distribution.
-        Feature-wise data types.
-
     Add some visualization for text features?
 """
+
 import numpy as np
 import pandas as pd
 import matplotlib

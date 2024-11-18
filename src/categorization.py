@@ -1,7 +1,11 @@
+"""
+    TODO:
+        Determine whether categorical that has 2 unique values is Boolean
+        e.g - feature with values "yes" or "no"
+"""
 import pandas as pd
 import numpy as np
 from src.data_quality import check_low_variance
-
 
 def categorize_feature(df, feature_name):
     """

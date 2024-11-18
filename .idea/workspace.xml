@@ -4,23 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b255c05-77f3-4cc9-8cb9-8e6ccf9c2e9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
+    <list default="true" id="9b255c05-77f3-4cc9-8cb9-8e6ccf9c2e9c" name="Changes" comment="Moved main outside /src, __init__.py updated">
       <change beforePath="$PROJECT_DIR$/src/categorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/categorization.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data_quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_quality.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/target_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/text_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/general_testing.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/general_testing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_categorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_categorization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_data_quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_data_quality.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_target_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_target_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_text_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_text_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +67,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\PycharmProjects\dataframe-assistant\" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python.test_text_analysis">
     <configuration name="categorization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataframe-assistant" />
@@ -221,12 +214,36 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1731900998511</updated>
-      <workItem from="1731900999881" duration="16949000" />
+      <workItem from="1731900999881" duration="17629000" />
     </task>
+    <task id="LOCAL‎-00001" summary="Moved main outside /src, __init__.py updated">
+      <option name="closed" value="true" />
+      <created>1731928223143</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL‎-00001" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1731928223143</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Moved main outside /src, __init__.py updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved main outside /src, __init__.py updated" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dataframe_assistant$target_analysis.coverage" NAME="target_analysis Coverage Results" MODIFIED="1731924217838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />

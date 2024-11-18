@@ -5,12 +5,12 @@
     Provide summary insights on the text feature.
 """
 
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib
 from wordcloud import WordCloud
 import seaborn as sns
-from collections import Counter
 matplotlib.use('TkAgg')
 
 
