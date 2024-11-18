@@ -1,7 +1,7 @@
 
 # DataFrame Analysis Tool
 
-This project provides a structured Python-based framework to facilitate DataFrame analysis. It categorizes features by data type, assesses data quality, and offers detailed visual and textual analyses, including correlations with a target variable. The tool is modular and designed to assist developers in gaining insights into their datasets efficiently.
+This project is in work. the purpose of this project is to provide a structured Python-based framework to facilitate DataFrame analysis. It categorizes features by data type, assesses data quality, and offers detailed visual and textual analyses, including correlations with a target variable. The tool is modular and designed to assist developers in gaining insights into their datasets efficiently.
 
 ---
 
@@ -36,77 +36,6 @@ This project provides a structured Python-based framework to facilitate DataFram
 - Visualizes text data using distributions and word clouds.
 - Evaluates the relationship between textual features and the target variable.
 
----
-
-## Project Structure
-
-```
-project_directory/
-│
-├── categorize.py            # Functions for categorizing features by data type.
-├── data_quality.py          # Functions for assessing data quality.
-├── visualization.py         # Functions for visualizing features.
-├── target_analysis.py       # Functions for analyzing the target variable.
-├── text_analysis.py         # Functions for analyzing textual data.
-├── tests/                   # Unit tests for all modules.
-├── datasets/                # Example datasets for testing.
-└── README.md                # Project documentation.
-```
-
----
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/dataframe-analysis-tool.git
-   cd dataframe-analysis-tool
-   ```
-
-2. Install the required Python packages:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
----
-
-## Usage
-
-1. Import the relevant module:
-   ```python
-   from categorize import categorize_all_features
-   from data_quality import assess_data_quality
-   from visualization import analyze_numerical_feature
-   from target_analysis import analyze_target_distribution
-   from text_analysis import summarize_text_analysis
-   ```
-
-2. Perform feature categorization:
-   ```python
-   categories = categorize_all_features(df)
-   print(categories)
-   ```
-
-3. Assess data quality:
-   ```python
-   assess_data_quality(df)
-   ```
-
-4. Generate visualizations for a numerical feature:
-   ```python
-   analyze_numerical_feature(df, "numerical_column_name")
-   ```
-
-5. Summarize text features:
-   ```python
-   summarize_text_analysis(df['text_column'], df['label_column'])
-   ```
-
----
-
-## License
-
-This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 --- 
 
