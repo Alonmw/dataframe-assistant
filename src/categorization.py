@@ -3,11 +3,18 @@
         Determine whether categorical that has 2 unique values is Boolean
         e.g - feature with values "yes" or "no"
 """
+"""
+    It is recommended to check categorization manually and make adjustments accordingly
+    
+    The check low variance wont be as useful when working with small datasets
+    where number of examples is less than a 1000
+"""
 import pandas as pd
 import numpy as np
-from src.data_quality import check_low_variance
+from src.data_quality import feature_low_variance
 
-def categorize_feature(df, feature_name):
+
+def categorize_feature(feature):
     """
     Classify the feature by its datatype.
 
@@ -18,10 +25,9 @@ def categorize_feature(df, feature_name):
     Returns:
     - category: A string representing the feature's category
     """
-    feature = df[feature_name]
 
     # Check for low variance potentially categorical
-    if feature_name in check_low_variance(df, relative_threshold=0.005):
+    if feature_low_variance(feature):
         return 'Categorical'
     # Check for numerical data types
     if pd.api.types.is_numeric_dtype(feature):
@@ -73,7 +79,7 @@ def categorize_all_features(df):
         'Text': [],
         'Unknown': []
     }
-    for feature_name in df.columns:
-        classification = categorize_feature(df, feature_name)
-        categories[classification].append(feature_name)
+    for col in df:
+        classification = categorize_feature(df[col])
+        categories[classification].append(col)
     return categories

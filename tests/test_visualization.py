@@ -4,4 +4,4 @@ from src.data_quality import *
 
 df = pd.read_csv(r'C:\Users\User\PycharmProjects\dataframe-assistant\data\listings.csv')
 
-plot_correlation_matrix(df)
+analyze_target_vs_feature(df['beds'], df['price'])

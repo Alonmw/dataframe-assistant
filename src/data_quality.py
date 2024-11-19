@@ -36,7 +36,13 @@ def check_duplicates(df):
         'Duplicate Columns': duplicate_columns
     }
 
-def check_low_variance(df, relative_threshold=0.01, absolute_threshold=5):
+def feature_low_variance(feature, relative_threshold=0.01, absolute_threshold=5):
+    if feature.nunique() / len(feature) <= relative_threshold or absolute_threshold >= feature.nunique():
+        return True
+    else:
+        return False
+
+def df_low_variance(df, relative_threshold=0.01, absolute_threshold=5):
     """
     Identifies features with low variance.
 
@@ -48,8 +54,8 @@ def check_low_variance(df, relative_threshold=0.01, absolute_threshold=5):
     - low_variance_features: A list of features with variance below the threshold.
     """
     low_variance_features = []
-    for col in df.columns:
-        if df[col].nunique() / len(df[col]) <= relative_threshold or df[col].nunique() <= absolute_threshold:
+    for col in df:
+        if feature_low_variance(df[col], relative_threshold, absolute_threshold):
             low_variance_features.append(col)
     return low_variance_features
 
@@ -100,7 +106,6 @@ def generate_quality_report(df):
     report = {
         'Missing Data': check_missing_data(df),
         'Duplicate Info': check_duplicates(df),
-        'Low Variance Features': check_low_variance(df),
-        # Add any additional checks here
+        'Low Variance Features': df_low_variance(df),
     }
     return report

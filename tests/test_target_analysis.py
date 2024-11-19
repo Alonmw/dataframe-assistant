@@ -1,7 +1,6 @@
 import pandas as pd
 
 from src.data_quality import check_outliers
-from src.target_analysis import *
 from test_categorization import *
 
 df = pd.read_csv(r'C:\Users\User\PycharmProjects\dataframe-assistant\data\listings.csv')
