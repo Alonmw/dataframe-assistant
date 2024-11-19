@@ -4,13 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b255c05-77f3-4cc9-8cb9-8e6ccf9c2e9c" name="Changes" comment="deleted done TODOs, added TODO in categorization.py">
+    <list default="true" id="9b255c05-77f3-4cc9-8cb9-8e6ccf9c2e9c" name="Changes" comment="Updated visualization.py, updated categorization.py, usages in other modules">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/categorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/categorization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_quality.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/data_quality.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/target_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/target_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/visualization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_categorization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_categorization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_visualization.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_visualization.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,29 +72,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.test_visualization">
-    <configuration name="target_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
-      <module name="dataframe-assistant" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/target_analysis.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_categorization" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="dataframe-assistant" />
       <option name="ENV_FILES" value="" />
@@ -113,6 +87,29 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_categorization.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test_data_quality" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="dataframe-assistant" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_data_quality.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -193,10 +190,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.test_visualization" />
+        <item itemvalue="Python.test_data_quality" />
         <item itemvalue="Python.test_categorization" />
         <item itemvalue="Python.test_text_analysis" />
         <item itemvalue="Python.test_target_analysis" />
-        <item itemvalue="Python.target_analysis" />
       </list>
     </recent_temporary>
   </component>
@@ -218,7 +215,8 @@
       <updated>1731900998511</updated>
       <workItem from="1731900999881" duration="18272000" />
       <workItem from="1731929476187" duration="78000" />
-      <workItem from="1731983190952" duration="2758000" />
+      <workItem from="1731983190952" duration="3780000" />
+      <workItem from="1731994279264" duration="2783000" />
     </task>
     <task id="LOCAL‎-00001" summary="Moved main outside /src, __init__.py updated">
       <option name="closed" value="true" />
@@ -236,7 +234,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1731928867684</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL‎-00003" summary="Integrated target_analysis.py in visualization.py. Deleted target_analysis.py, changed categorization.py to be more efficient. all tested">
+      <option name="closed" value="true" />
+      <created>1731986624881</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL‎-00003" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1731986624881</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,17 +262,19 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Moved main outside /src, __init__.py updated" />
     <MESSAGE value="deleted done TODOs, added TODO in categorization.py" />
-    <option name="LAST_COMMIT_MESSAGE" value="deleted done TODOs, added TODO in categorization.py" />
+    <MESSAGE value="Updated visualization.py, updated categorization.py, usages in other modules" />
+    <MESSAGE value="Updated visualization.py, updated categorization.py, usages in other modules" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated visualization.py, updated categorization.py, usages in other modules" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/dataframe_assistant$target_analysis.coverage" NAME="target_analysis Coverage Results" MODIFIED="1731924217838" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$general_testing.coverage" NAME="general_testing Coverage Results" MODIFIED="1731919619238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$test_target_analysis.coverage" NAME="test_target_analysis Coverage Results" MODIFIED="1731924327270" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/dataframe_assistant$test_data_quality.coverage" NAME="test_data_quality Coverage Results" MODIFIED="1731917366011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/dataframe_assistant$test_data_quality.coverage" NAME="test_data_quality Coverage Results" MODIFIED="1731986227154" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$categorization.coverage" NAME="categorization Coverage Results" MODIFIED="1731919475237" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
-    <SUITE FILE_PATH="coverage/dataframe_assistant$test_visualization.coverage" NAME="test_visualization Coverage Results" MODIFIED="1731918405137" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$test_text_analysis.coverage" NAME="test_text_analysis Coverage Results" MODIFIED="1731926087208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$test_categorization.coverage" NAME="test_categorization Coverage Results" MODIFIED="1731985663637" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/dataframe_assistant$test_visualization.coverage" NAME="test_visualization Coverage Results" MODIFIED="1731994716246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/dataframe_assistant$data_quality.coverage" NAME="data_quality Coverage Results" MODIFIED="1731904037027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
   </component>
 </project>

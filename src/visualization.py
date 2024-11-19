@@ -93,6 +93,7 @@ def summarize_dataframe(df):
 
 def plot_target_distribution(target):
     """
+    HELPER FUNCTION
     Plots the distribution of the target variable.
 
     Parameters:
@@ -108,8 +109,9 @@ def plot_target_distribution(target):
     plt.ylabel("Frequency")
     plt.show()
 
-def analyze_target_vs_numerical(feature, target):
+def _analyze_target_vs_numerical(feature, target):
     """
+    HELPER FUNCTION
     Analyzes the relationship between a numerical feature and the target variable.
 
     Parameters:
@@ -140,7 +142,7 @@ def analyze_target_vs_numerical(feature, target):
     plt.tight_layout()
     plt.show()
 
-def analyze_target_vs_categorical(feature, target):
+def _analyze_target_vs_categorical(feature, target):
     """
     Analyzes the relationship between a categorical feature and the target variable.
 
@@ -174,9 +176,9 @@ def analyze_target_vs_feature(feature, target):
     """
     feature_type = categorize_feature(feature)
     if feature_type == "Categorical":
-        analyze_target_vs_categorical(feature, target)
+        _analyze_target_vs_categorical(feature, target)
     elif feature_type == "Integer" or feature_type == "Float":
-        analyze_target_vs_numerical(feature, target)
+        _analyze_target_vs_numerical(feature, target)
     else:
         raise TypeError("Feature type must be either Categorical or Numerical.")
 
@@ -193,11 +195,9 @@ def summarize_target_relationships(df, target):
     - None: Displays key summaries and statistics.
     """
     print("Target Relationship Summary:")
-    categories = categorize_all_features(df)
+    categories = ['Integer', 'Float', 'Categorical']
     for column in df.columns:
         print(f"\nAnalyzing {column}:")
-        if column in categories['Float'] or column in categories['Integer']:
-            analyze_target_vs_numerical(df[column], target)
-        elif column in categories['Categorical']:
-            analyze_target_vs_categorical(df[column], target)
+        if categorize_feature(df[column]) in categories:
+            analyze_target_vs_feature(df[column], target)
 
